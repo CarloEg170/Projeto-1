@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> agendamento,tosa e banho</title>
+    <meta name="discription" content="agendamento">
+    <meta name="keyworks" content="agendamento para banho,e tosa">
+
+</head>
+
+<body>
+    <h1>agendamento para banho e tosa</h1>
+    <h2>Faça o seu agendamento com pelo menos 48 horas de antecedencia </h2>
+
+    <form action="agendar.php" method="get">
+        <fieldset>
+            <legend>Indentificação do dono do animal</legend>
+            <p>
+                <label for="name">nome:</label>
+                <input type="text" name="name" id="nome" placeholder="digite seu nome" required>
+
+            </p>
+            <p>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" placeholder="digite seu email" required>
+            </p>
+            <p>
+                <label for="telefone">telefone</label>
+                <input type="telefone" name="telefone" id="telefone" placeholder="digite seu telefone"required>
+            </p>
+            <p>
+                <label for="cep">cep</label>
+                <input type="cep" name="cep" id="cep" placeholder="digite seu cep" required>
+            </p>
+
+            <p>
+                <label for="endereco">endereco</label>
+                <input type="endereco" name="endereco" ip="endereco" placeholder="digite seu endereco" required>
+            </p>
+            <p>
+                <label for="numero">numero</label>
+                <input type="nemero" name="numero" ip="numero" placeholder="digite seu numero" required>
+            </p>
+            <p>
+                <label for="bairro">bairro</label>
+                <input type="bairro" name="bairro" ip="bairro" placeholder="digite seu bairro" required>
+            </p>
+
+            <p>
+                <label for="cidade">cidade</label>
+                <input type="cidade" name="cidade" ip="cidade" placeholder="digite sua cidade" required>
+            </p>
+            <p>
+                <label for="estado">estado</label>
+                <select id="estado" name="estado">
+                    option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pet</legend>
+
+            <p>
+                <label for="nomePet">nome</label>
+                <input name="name" type="text" placeholder="digite o nome do pet">
+            </p>
+
+            <p>
+                <strong>porte do pet</strong>
+
+                <label><input type="radio" name="portepet">pequeno</label>
+                <label><input type="radio" name="portepet">medio</label>
+                <label><input type="radio" name="portepet">grande</label>
+            </p>
+            <p>
+                <label for="tipotosa">tipo de tosa</label>
+                <select name="tipotosa" id="tipotosa">
+                    <option valvue="">nenhum</option>
+                    <option valvue="tosa padrao">tosa padrao</option>
+                    <option valvue="tosa higienica">tosa higienico</option>
+                    <option valvue="tesoura">tosa na tesoura</option>
+                    <option valvue="raça"> tosa da raça</option>
+                    <option valvue="bebê">tosa bebê</option>
+                </select>
+
+            </p>
+            <p>
+                <label for="observaçoes"> observaçoes</label>
+                <textarea name="observaçoes" id="observaçoes" rows="5" cols="30"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>horario</legend>
+            <p>indique os dias da semana de sua preferencia<br>
+                <label><input type="checkbox" name="diasemana[]">segunada-feira</label>
+                <label><input type="checkbox" name="diasemana[]">terça-feira</label>
+                <label><input type="checkbox" name="diasemana[]">quarta-feira</label>
+                <label><input type="checkbox" name="diasemana[]">quinta-feira</label>
+                <label><input type="checkbox" name="diasemana[]">sexta-feira</label>
+                <label><input type="checkbox" name="diasemana[]">sabado-feira</label>
+            </p>
+            <p>
+                <label for="dataprimeiro">primeiras opçoes de horario</label>
+                <input type="date" name="datasegunda" id="datasegunda">
+            </p>
+        </fieldset>
+
+        <input type="submit" value="agendar">
+        <button type="submit">agendar</button>
+
+
+
+        <!--<labal>senha</labal>
+        <input type="password" name="senha" id="senha">-->
+
+
+
+
+    </form>
+
+</body>
+
+</html>

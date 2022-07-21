@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Login: Projeto Garmous</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+
+
+<body>
+    <Header>
+        <div id="barraSuperior">
+            <div class="container">
+                <div class="row">
+
+
+                    <div id="logotipo" class="col-md-2 col-10">
+                        <a href="index.html">
+                            <img src="img/logo-projeto.png" alt="logo Garmous" width="100">
+                        </a>
+                    </div>
+
+                    <div class="col-2 d-block d-lg-none">
+                        <button id="btnMenu" class="btn btnmenu mt-3">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <nav id="menu" class="col-md-10">
+                        <ul>
+                            <li><a href="sobreNos.html">Sobre Nós</a></li>
+                            <li><a href="ajuda.html">Ajuda</a></li>
+                            <li><a href="app.html">App</a></li>
+                            <li><a class="login" href="login.html">Login</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+
+    </Header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+                <form action="" method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label">Nome da Empresa</label>
+                        <input name="nome" type="text" id="nome" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="CPF" class="form-label">CNPJ</label>
+                        <input name="CPF" type="CPF" id="CPF" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input name="email" type="email" id="email" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Telefone" class="form-label">Telefone</label>
+                        <input name="Telefone" type="Telefone" id="Telefone" class="form-control">
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <h3>Endereço</h3>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input name="cep" type="text" id="cep" class="form-control">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input name="endereco" type="text" id="endereco" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="numero" class="form-label">Número</label>
+                        <input name="numero" type="text" id="numero" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="complemento" class="form-label">Complemento</label>
+                        <input name="complemento" type="text" id="complemento" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input name="bairro" type="text" id="bairro" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input name="cidade" type="text" id="cidade" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="estado" class="form-label">Estado</label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="Senha" class="form-label">Senha</label>
+                        <input name="Senha" type="text" id="Senha" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ConfirmaSenha" class="form-label">Confirma Senha</label>
+                        <input name="ConfirmaSenha" type="text" id="ConfirmaSenha" class="form-control">
+                    </div>
+
+                    <div class="col-md-12 text-center" id="botaoEnviar">
+                        <button class="btn btn-secondary">Enviar</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section id="boxlocalizacao">
+        <footer id="rodape">
+            <div class="bgVermelho">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="textRodape">
+                                <h4>Institucional</h4>
+                                <ul>
+                                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                                    <li><a href="ajuda.html">Ajuda</a></li>
+                                    <li><a href="app.html">App</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="textRodape">
+                                <h4>Serviços</h4>
+                                <ul>
+                                    <li><a href="garcom.html">Garçom</a></li>
+                                    <li><a href="entregador.html">Entregador</a></li>
+                                    <li><a href="atendente.html">Atendente</a></li>
+                                    <li><a href="barman.html">Barman</a></li>
+                                    <li><a href="cozinheiro.html">Cozinheiro</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="textRodape">
+                                <h4>Redes Sociais</h4>
+                                <div class="iconRedeSocial">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="textRodape">
+                                <h4>Downloads</h4>
+                                <img class="img-fluid" src="img/googleplay.png" alt="googleplay">
+                                <img class="img-fluid" src="img/AppleStore.png" alt="AppleStore">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <div id="copyright">
+        <p>
+            Termos de Uso - Copyright - Politica de Privacidade
+        </p>
+    </div>
+</body>
+
+</html>
